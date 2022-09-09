@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/black">
+    <TextView
+        android:layout_margin="5dp"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter feedback details to send to the developer:"
+        android:textSize="22sp"/>
+
+    <EditText
+        android:id="@+id/edUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/item_background"
+        android:hint="Name"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/edEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/item_background"
+        android:hint="Emails"
+        android:minHeight="48dp" />
+    <Spinner
+        android:layout_margin="5dp"
+        android:id="@+id/spGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_background"
+        android:layout_marginTop="5dp"/>
+    <EditText
+        android:layout_margin="5dp"
+        android:id="@+id/edDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Feedback"
+        android:layout_marginTop="5dp"
+        android:lines="5"
+        android:inputType="textMultiLine"
+        android:background="@drawable/item_background"
+        android:gravity="top"/>
+
+    <CheckBox
+        android:id="@+id/cbAccept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="5dp"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        android:text="Would you like an email response?"
+        android:textSize="20sp"
+        android:button="@drawable/checkbox_background"/>
+    <Button
+        android:layout_margin="5dp"
+        android:id="@+id/btnRegister"
+        android:background="@drawable/btn_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send feedback"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
